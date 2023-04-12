@@ -1,0 +1,12 @@
+name: First Practice Worlflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: print some message
+        run: echo "Hello World"
+      - name: print some more message
+        run: echo "How are you, greetings for the day"
+      - name: end of message
+        run: echo "Have a good day, BYE!"
