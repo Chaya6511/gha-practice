@@ -5,8 +5,17 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: print some message
-        run: echo "Hello World"
+        run: |
+          echo "Hello World line1"
+          echo: "Multi line print , hi"
+          echo: "sample output"
       - name: print some more message
         run: echo "How are you, greetings for the day"
       - name: end of message
         run: echo "Have a good day, BYE!"
+  expressions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print information
+        run: echo "${{ toJSON(github)}}"
+    
