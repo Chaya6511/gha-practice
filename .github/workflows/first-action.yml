@@ -17,5 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print information
-        run: echo heloooo
+        run: |
+          echo heloooo
+          VAR=$(shuf -i 100-200 -n 1)
+          echo $VAR
+          
+          sleep $VAR's'
     
