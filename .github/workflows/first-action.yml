@@ -17,5 +17,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print information
-        run: echo "${{ toJSON(github)}}"
+        run: echo heloooo
     
