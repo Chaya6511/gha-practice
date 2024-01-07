@@ -1,7 +1,7 @@
 name: Second Practice Worlflow
 on: workflow_call
 jobs:
-  first-job:
+  second-job:
     runs-on: ubuntu-latest
     steps: 
       - name: second print
