@@ -13,14 +13,10 @@ jobs:
         run: echo "How are you, greetings for the day"
       - name: end of message
         run: echo "Have a good day, BYE!"
-  expressions:
-    runs-on: ubuntu-latest
-    steps:
       - name: second print info
         run: |
           echo heloooo
           VAR=$(shuf -i 100-200 -n 1)
           echo $VAR
-          
           sleep $VAR's'
     
