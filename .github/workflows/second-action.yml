@@ -1,0 +1,26 @@
+name: Second Practice Worlflow
+on: workflow_call
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: second print
+        run: |
+          echo "Hello World line1"
+          echo "Multi line print , hi"
+          echo "sample output"
+      - name: print some more message
+        run: echo "How are you, greetings for the day"
+      - name: end of message
+        run: echo "Have a good day, BYE!"
+  expressions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: second print info
+        run: |
+          echo heloooo
+          VAR=$(shuf -i 100-200 -n 1)
+          echo $VAR
+          
+          sleep $VAR's'
+    
